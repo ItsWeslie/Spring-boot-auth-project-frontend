@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 
 
-function Login() {
+function LoginPage() {
 
     const navigate = useNavigate();
     const[email,setEmail] = useState("");
@@ -140,4 +140,4 @@ function Login() {
   )
 }
 
-export default Login
+export default LoginPage

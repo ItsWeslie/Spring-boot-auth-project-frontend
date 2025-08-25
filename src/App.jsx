@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from './pages/login'
+import Login from './pages/LoginPage'
 import './App.css'
 import Signup from './pages/Signup'
 import ProtectedRoute from "./components/ProtectedRoutes";
@@ -30,7 +30,7 @@ function UserLanding() {
     <>
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Login/>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/oauth-login" element={<OAuth2Redirect />} />
         <Route
